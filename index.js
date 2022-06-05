@@ -30,6 +30,12 @@ function agregarNombre() {
     document.getElementById("numero").value = ""; //limpiar celda de cantidad
     repartir(total);
 }else{
-        alert("ingresar nombre y numero positivo"); //si no se cumple la condicion alerta
+        aviso(); //si no se cumple la condicion alerta
     }
+}
+
+function aviso(){
+    var toastHTMLElement = document.getElementById("EpicToast");
+    var toastElement = new bootstrap.Toast(toastHTMLElement);
+    toastElement.show();
 }

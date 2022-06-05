@@ -26,7 +26,14 @@
         <input class="form-control" name="name" type="text" id= "texto" placeholder="Nombre" aria-label="default input example" autocomplete="off">
 
         <input class="form-control" name="cant" type="number" name=" " id="numero" placeholder="cantidad gastada">
-
+        <div class="toast align-items-center text-bg-primary border-0" id="EpicToast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              Debes ingresar un valor válido! 
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
         <button type="button" class="btn btn-danger" onclick="agregarNombre();">Enviar</button>
        
 
